@@ -122,7 +122,7 @@ form select,
 form input {
   width: 180px;
   margin-left: auto;
-  display: flex; 
+  display: flex;
   margin-top: 0;
 }
 
@@ -149,7 +149,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 481px) {
+@media all and (min-width: 480px) {
   h2 {
     font-weight: bold;
   }
@@ -157,6 +157,10 @@ footer p {
   h3 {
     font-size: 15px;
     font-weight: bold;
+  }
+
+  p {
+    margin: 5% 0;
   }
 
   header {
@@ -177,22 +181,28 @@ footer p {
     width: 100px;
   }
 
+  form.search-bar {
+    min-width: 480px;
+  }
+
   .group {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   form label {
-  font-weight: bold;
-  
-  /* margin-right: auto; */
-  /* margin-top: auto; */
-}
+    font-weight: bold;
+  }
 
   form select,
   form input {
     width: 180px;
     margin-left: auto;
     margin-top: 0;
+  }
+
+  section#host div div h2{
+    margin: 9% 0;
   }
 }
